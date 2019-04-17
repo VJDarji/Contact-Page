@@ -11,8 +11,8 @@
     <title>Foodvilla Web app</title>
 
     <!-- Bootstrap core CSS -->
-    
-    {!!Html::style('./resources/vendor/bootstrap/css/bootstrap.min.css')!!}
+
+      <link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}">
     <style type="text/css">
       .row{line-height: 40px;}
     </style>
@@ -63,16 +63,15 @@
 
     <!-- Bootstrap core JavaScript -->
 
-    {!!Html::script('./resources/vendor/jquery/jquery.min.js')!!}
-   
-    {!!Html::script('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js')!!} 
-
-    {!!Html::script('./resources/vendor/bootstrap/js/bootstrap.bundle.min.js')!!} 
-   
-    {!!Html::script('./resources/vendor/bootstrap/js/bootstrap.min.js')!!} 
+    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    {{--<script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>--}}
 
 
-  
+    {!!Html::script('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js')!!}
+
+
+
     <script type="text/javascript" language="javascript">
 
 </script>
